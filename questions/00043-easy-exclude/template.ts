@@ -5,6 +5,7 @@ type a = {
   'aa1a': string
 }
 type un = 'string'|'number'
+// 分发是有条件的
 type un1 = 'string' extends un ? un : never
 // 问题点 怎么遍历联合类型
 // 数组[number]
