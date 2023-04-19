@@ -1,7 +1,7 @@
 import type { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
-  Expect<Equal<DeepReadonly<X>, Expected>>,
+  Expect<Equal<DeepReadonly110<X>, Expected>>,
 ]
 
 type X = {
@@ -26,7 +26,6 @@ type X = {
     }
   }
 }
-
 type Expected = {
   readonly a: () => 22
   readonly b: string
